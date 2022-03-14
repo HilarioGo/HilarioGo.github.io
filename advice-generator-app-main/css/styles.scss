@@ -1,0 +1,117 @@
+$breakpoint-mobile:375px;
+$breakpoint-desktop:1440px;
+
+/*Pmimary Colors*/
+
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+
+/*Neutral*/
+
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+@font-face {
+    font-family: Manrope;
+    src: url('https://fonts.google.com/specimen/Manrope');
+    font-weight: 800;
+}
+
+body {
+    display:grid;
+    justify-content: center;
+    background-color: $DarkBlue;
+}
+
+hr {
+    border: none;
+    color: $GrayishBlue;
+    width: 90%;
+    content: url(../images/pattern-divider-desktop.svg);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    background-color: $DarkGrayishBlue;
+    border-radius: 7px;
+    max-width: 400px;
+}
+
+#AdviceTitle {
+    padding-top: 3em;
+    text-align: center;
+    color: $NeonGreen;
+    text-transform: uppercase;
+    font-family: Manrope, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+#AdviceBody {
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: $LightCyan;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Manrope, Arial, Helvetica, sans-serif;
+}
+
+#button {
+    display: block;
+    position: relative;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: $NeonGreen;
+    border-color: $NeonGreen;
+    border-style: solid;
+}
+
+#button:hover {
+    box-shadow: 0 0 30px $NeonGreen;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: $LightCyan;
+}
+
+
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    body { 
+        display:absolute;
+        top: 0%;
+        background-color: $DarkBlue;
+    }
+
+    hr {
+        content: url(../images/pattern-divider-mobile.svg);
+    }
+
+    .card {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: -50%;
+        background-color: $DarkGrayishBlue;
+        border-radius: 7px;
+        width: 90%;
+    }
+}

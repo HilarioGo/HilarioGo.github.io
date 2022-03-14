@@ -1,0 +1,111 @@
+/*Pmimary Colors*/
+/*Neutral*/
+@font-face {
+  font-family: Manrope;
+  src: url("https://fonts.google.com/specimen/Manrope");
+  font-weight: 800;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1f2632;
+}
+
+hr {
+  border: none;
+  color: #4e5d73;
+  width: 90%;
+  content: url(../images/pattern-divider-desktop.svg);
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-right: -50%;
+  background-color: #323a49;
+  border-radius: 7px;
+  max-width: 400px;
+}
+
+#AdviceTitle {
+  padding-top: 3em;
+  text-align: center;
+  color: #52ffa8;
+  text-transform: uppercase;
+  font-family: Manrope, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+#AdviceBody {
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: #cee3e9;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+}
+
+#button {
+  display: block;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #52ffa8;
+  border-color: #52ffa8;
+  border-style: solid;
+}
+
+#button:hover {
+  -webkit-box-shadow: 0 0 30px #52ffa8;
+          box-shadow: 0 0 30px #52ffa8;
+}
+
+.attribution {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #cee3e9;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: absolute;
+    top: 0%;
+    background-color: #1f2632;
+  }
+  hr {
+    content: url(../images/pattern-divider-mobile.svg);
+  }
+  .card {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-right: -50%;
+    background-color: #323a49;
+    border-radius: 7px;
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

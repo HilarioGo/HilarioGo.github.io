@@ -12,12 +12,6 @@ $GrayishBlue: hsl(217, 19%, 38%);
 $DarkGrayishBlue: hsl(217, 19%, 24%);
 $DarkBlue: hsl(218, 23%, 16%);
 
-@font-face {
-    font-family: Manrope;
-    src: url('https://fonts.google.com/specimen/Manrope');
-    font-weight: 800;
-}
-
 body {
     display:grid;
     justify-content: center;
@@ -59,8 +53,8 @@ hr {
     margin-right: 10%;
     text-align: center;
     color: $LightCyan;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 800;
     font-family: Manrope, Arial, Helvetica, sans-serif;
 }
 

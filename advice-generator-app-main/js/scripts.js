@@ -1,15 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let request = new XMLHttpRequest();
-    request.open('GET', 'https://api.adviceslip.com/advice');
-    request.send();
-    request.onload = updateAdvice;
+    updateAdvice();
 
     document.getElementById('button').addEventListener('click', updateAdvice);
 });
 
 function updateAdvice() {
     let request = new XMLHttpRequest();
-    request.open('GET', 'https://api.adviceslip.com/advice');
+    request.open('GET', 'https://api.adviceslip.com/advice?t=' + Math.random(), true);
     request.send();
     request.onload = function() {
         console.log(request);

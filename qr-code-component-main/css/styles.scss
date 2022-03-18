@@ -1,0 +1,68 @@
+/* Screen Thresholds */
+$mobile-threshold: 375px;
+$desktop-threshold: 1440px;
+
+/* Colors */
+$White: hsl(0, 0%, 100%);
+$LightGray: hsl(212, 45%, 89%);
+$GrayishBlue: hsl(220, 15%, 55%);
+$DarkBlue: hsl(218, 44%, 22%);
+
+html {
+    height: 100%;
+    
+}
+
+body {
+    background-color: $LightGray;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: $White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    border-radius: 15px;
+}
+
+h1 {
+    color: $DarkBlue;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p {
+    color: $GrayishBlue;
+    font-family: Outfit;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+.card-item {
+    margin: 5%;
+    width: 80%;
+}
+
+.card img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 10px;
+}
+
+@media screen and (min-width: $mobile-threshold) {
+    .card {
+        max-width: 337px;
+    }
+}

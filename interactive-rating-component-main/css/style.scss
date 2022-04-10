@@ -30,6 +30,7 @@ body {
     background-color: $Very-Dark-Blue;
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -189,4 +190,8 @@ body {
         padding: .5rem;
         font-size: .75rem;
     }
+}
+
+.attribution {
+    color: $White;
 }

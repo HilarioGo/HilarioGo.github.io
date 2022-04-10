@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.html {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #121417;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(min-content, 20rem);
+      grid-template-columns: minmax(-webkit-min-content, 20rem);
+      grid-template-columns: minmax(min-content, 20rem);
+  -ms-grid-rows: minmax(min-content, 17rem);
+      grid-template-rows: minmax(-webkit-min-content, 17rem);
+      grid-template-rows: minmax(min-content, 17rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: invisible;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.card__star {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #252d37;
+  background-image: url(../images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-size: .75rem;
+  background-position: center;
+  font-size: 1rem;
+}
+
+.card__side {
+  color: white;
+  border-radius: 1rem;
+  padding: 1.75rem 1rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-family: Overpass, sans-serif;
+  text-align: center;
+  background-image: radial-gradient(circle at top center, #252d37, #171c21);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__side--front {
+  text-align: left;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card__side--back {
+  -ms-grid-rows: 30%;
+      grid-template-rows: 30%;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  justify-items: center;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card__active > .card__side--front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__active > .card__side--back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.card__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.card__text {
+  color: #959eac;
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+.card__ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__rating > input {
+  display: none;
+}
+
+.card__rating > span {
+  display: block;
+  background-color: #252d37;
+  color: #959eac;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  font-size: .65rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.card__rating > span:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.card__rating > input:checked + span {
+  background-color: #7c8798;
+  color: white;
+}
+
+.card__btn {
+  background-color: #fb7413;
+  border-radius: 15rem;
+  padding: .75rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card__btn:hover {
+  background-color: white;
+  color: #fb7413;
+  cursor: pointer;
+}
+
+.card__thankyou {
+  width: 100%;
+  width: 100%;
+  background-image: url(../images/illustration-thank-you.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-size: 1rem;
+}
+
+.card__selection {
+  background-color: #252d37;
+  color: #fb7413;
+  border-radius: 1rem;
+  padding: .5rem;
+  font-size: .75rem;
+}
+/*# sourceMappingURL=style.css.map */

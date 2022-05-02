@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(95%, 40rem);
+      grid-template-columns: minmax(95%, 40rem);
+  -ms-grid-rows: minmax(95%, 55rem);
+      grid-template-rows: minmax(95%, 55rem);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f7ff;
+  color: #7280a7;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Red Hat Display', sans-serif;
+  border-radius: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(114, 128, 167, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(114, 128, 167, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.card__hero {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 30%;
+  background: url("../images/illustration-hero.svg") no-repeat center bottom;
+  background-size: 100% 100%;
+}
+
+.card__body {
+  padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 29rem;
+      grid-template-columns: 29rem;
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
+  grid-row-gap: 1rem;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__summary {
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.card__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.card__plan {
+  background-color: rgba(114, 128, 167, 0.05);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__plan--icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url("../images/icon-music.svg");
+  background-size: 100% 100%;
+}
+
+.card__plan--price {
+  width: 40%;
+  margin-right: auto;
+}
+
+.card__plan--price > h2 {
+  font-size: 1.5rem;
+  color: #1f2f56;
+}
+
+.card__plan--price > p {
+  font-size: 1.4rem;
+}
+
+.card__plan--change {
+  color: #3829e0;
+  font-weight: 700;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.card__btn {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: none;
+  font-weight: 700;
+  -webkit-box-shadow: 0 1rem 1rem rgba(114, 128, 167, 0.5);
+          box-shadow: 0 1rem 1rem rgba(114, 128, 167, 0.5);
+}
+
+.card__btnCancel {
+  font-weight: 700;
+  color: #7280a7;
+  background-color: #f5f7ff;
+  border-style: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -144,6 +144,11 @@ body {
       justify-self: end;
 }
 
+.card__plan--change:hover {
+  color: #766cea;
+  text-decoration: none;
+}
+
 .card__btn {
   background-color: #3829e0;
   color: #f5f7ff;
@@ -155,10 +160,20 @@ body {
           box-shadow: 0 1rem 1rem rgba(114, 128, 167, 0.5);
 }
 
+.card__btn:hover {
+  background-color: #766cea;
+  cursor: pointer;
+}
+
 .card__btnCancel {
   font-weight: 700;
   color: #7280a7;
   background-color: #f5f7ff;
   border-style: none;
+}
+
+.card__btnCancel:hover {
+  color: #1f2f56;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

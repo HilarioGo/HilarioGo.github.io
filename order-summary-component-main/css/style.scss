@@ -122,6 +122,11 @@ body {
             color: $Bright-blue;
             font-weight: 700;
             justify-self: end;
+
+            &:hover {
+                color: lighten($Bright-blue, 15%);
+                text-decoration: none;
+            }
         }
     }
 
@@ -133,6 +138,11 @@ body {
         border: none;
         font-weight: 700;
         box-shadow: 0 1rem 1rem rgba($Desaturated-blue, 0.5);
+
+        &:hover {
+            background-color: lighten($Bright-blue, 15%);
+            cursor: pointer;
+        }
     }
 
     &__btnCancel {
@@ -140,6 +150,11 @@ body {
         color: $Desaturated-blue;
         background-color: $Very-pale-blue;
         border-style: none;
+
+        &:hover {
+            color: $Dark-blue;
+            cursor: pointer;
+        }
     }
 }
 
